@@ -12,9 +12,12 @@ allure对用例的等级划分成五个等级
  trivial　　 轻微缺陷（必须项无提示，或者提示不规范）
 
 '''
-a = readyml(r'D:\soft\code\web_pytest_2020\case\testdata.yml')
-# print(a['test_add_param_demo'])
+import os
 
+curpath = os.path.dirname(os.path.realpath(__file__))
+# a = readyml(r'D:\soft\code\web_pytest_2020\case\testdata.yml')
+# print(a['test_add_param_demo'])
+a = readyml(os.path.join(curpath, "testdata.yml"))
 testdata = a['test_add_param_demo']
 # 测试数据单独拿出来
 # testdata = [("测试中文", True),
