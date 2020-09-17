@@ -50,4 +50,3 @@ def test_login1(test_input, expected):
     print("user:%s, psw:%s" % (test_input["user"], test_input["psw"]))
     result = True  # 实际结果
     assert result == expected
-
